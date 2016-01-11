@@ -24,6 +24,6 @@ socket.on('add user', function (username) {
     });
 });
 
-http.listen(80, function(){
+http.listen(process.env.PORT, function(){
   console.log('listening on *:80');
 });
