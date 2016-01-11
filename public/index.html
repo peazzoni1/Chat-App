@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <form id="nickNameBox" class="form-inline">
+      <div class="form-group">
+        <input type="text" id="nickNameInput" class="form-control" placeholder="Enter a nickname"><button type="submit" id="addUser" class="btn btn-primary">Create</button>
+      </div>
+  </form>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
