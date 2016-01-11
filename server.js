@@ -23,7 +23,7 @@ socket.on('add user', function (username) {
   socket.username = username;
     });
 });
-
-http.listen(process.env.PORT, function(){
+var port = process.env.PORT || 8080;
+http.listen(port, function(){
   console.log('listening on *:80');
 });
